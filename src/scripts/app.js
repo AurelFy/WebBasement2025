@@ -1,3 +1,8 @@
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 "use strict" ; 
 
 window.addEventListener('scroll', function() {
@@ -20,3 +25,32 @@ window.addEventListener('scroll', () => {
     title.style.transform = `translate(-50%, -${progress * 100}%)`;
     title.style.opacity = `${1 - progress}`;
   });
+
+const chapOneText = document.querySelector('.chapter--first__text01');
+const chapOneText2 = document.querySelector('.chapter--first__text02');
+
+gsap.from(".text1", {
+    scrollTrigger: {
+        trigger: chapOneText,
+        start: "center bottom",
+        end: "top top",
+        scrub: true,
+        markers: true,
+    },
+    y: -100,
+    opacity: 0,
+    duration: 1
+});
+
+gsap.from(".text2", {
+    scrollTrigger: {
+        trigger: chapOneText2,
+        start: "center bottom",
+        end: "top top",
+        scrub: true,
+        markers: true,
+    },
+    y: -100,
+    opacity: 0,
+    duration: 1
+});

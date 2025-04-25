@@ -1,2 +1,59 @@
 @import 'utils/variables';
 @import 'components/type';
+
+body, html {
+    margin: 0;
+    height: 300vh; /* Pour avoir un scroll visible */
+    overflow-x: hidden;
+  }
+  
+  .parallax-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+  }
+  
+  .layer-back {
+    background-image: url('../assets/fond_projets_.png');
+    z-index: 1;
+  }
+  
+  .layer-middle {
+    background-image: url('../assets/images/deuxième_planV2.png');
+    z-index: 2;
+  }
+  
+  .layer-front {
+    background-image: url('../assets/images/premier_plan.png');
+    z-index: 4;
+  }
+
+  .title--big {
+    color: #000; 
+    font-family: Norse;
+    font-size: 12.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: 10%;
+    width: 100vw;
+    text-align: center;
+    z-index: 3;
+    transform: translateY(-50%, 0);
+    position: fixed;
+    transition: opacity 0.3s ease;
+  }
+

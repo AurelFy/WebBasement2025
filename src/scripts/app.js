@@ -48,7 +48,6 @@ gsap.from(".text2", {
         start: "center bottom",
         end: "top top",
         scrub: true,
-        markers: isDevelopment,
     },
     y: -100,
     opacity: 0,

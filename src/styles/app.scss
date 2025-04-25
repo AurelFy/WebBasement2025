@@ -7,7 +7,7 @@ body, html {
     overflow-x: hidden;
   }
   
-  .parallax-container {
+.parallax-container {
     position: relative;
     height: 100vh;
     overflow: hidden;
@@ -15,7 +15,7 @@ body, html {
     justify-content: center;
   }
   
-  .parallax-layer {
+.parallax-layer {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,22 +26,22 @@ body, html {
     will-change: transform;
   }
   
-  .layer-back {
+.layer-back {
     background-image: url('../assets/fond_projets_.png');
     z-index: 1;
   }
   
-  .layer-middle {
+.layer-middle {
     background-image: url('../assets/images/deuxième_planV2.png');
     z-index: 2;
   }
   
-  .layer-front {
+.layer-front {
     background-image: url('../assets/images/premier_plan.png');
     z-index: 4;
   }
 
-  .title--big {
+.title--big {
     color: #000; 
     font-family: Norse;
     font-size: 12.5rem;
@@ -52,8 +52,8 @@ body, html {
     width: 100vw;
     text-align: center;
     z-index: 3;
-    transform: translateY(-50%, 0);
+    left: 50%;
+    transform: translate(-50%, 0);
     position: fixed;
-    transition: opacity 0.3s ease;
   }
 

@@ -54,7 +54,7 @@ p {
 
 .title--big {
     color: #000; 
-    font-family: Norse;
+    font-family: "Norse-Bold";
     font-size: 12.5rem;
     font-style: normal;
     font-weight: 700;
@@ -67,6 +67,41 @@ p {
     transform: translate(-50%, 0);
     position: fixed;
   }
+
+.section-divider {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 1000;
+  background-color: #006dd4;
+  padding: 1rem 0;
+  pointer-events: none;
+  box-shadow: 0rem 0rem 2rem rgb(0, 96, 170);
+  span {
+    font-family: "Rurikviking";
+    font-size: 2.5rem;
+    color: #0070d9;
+    mix-blend-mode: color-dodge;
+  }
+  &__bg {
+    background-image: url(../assets/images/section-divider-bg.png);
+    background-size: cover; 
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    mix-blend-mode: multiply;
+  }
+}
+
+.chapter--first {
+  position: relative;
+}
 
 .chapter--first__text01 {
     height: 100vh;

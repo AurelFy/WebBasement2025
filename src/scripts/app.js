@@ -3,9 +3,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-"use strict" ;
-
-window.addEventListener('scroll', function() {
     const scrollTop = window.scrollY;
   
     document.querySelector('.layer-back').style.transform = `translateY(${scrollTop * 0.9}px)`;

@@ -106,6 +106,12 @@ p {
     z-index: -1;
     mix-blend-mode: multiply;
   }
+//   &--red {
+//     background-color: #f0a6a6;
+//   }
+  &--middle {
+    top: 50%;
+  }
 }
 
 .chapter--first {
@@ -144,6 +150,10 @@ p {
         margin: 0 8% 15% 0;
     }
     
+}
+
+.chapter--two, .chapter--first, .chapter--three, .chapter--four {
+    position: relative;
 }
 
 .chapter--two__text01 {
@@ -189,7 +199,7 @@ p {
     align-items: flex-start;
 
     p{
-        margin: 3% 7% 0 0 ;
+        margin: 7% 5% 0 0 ;
         color: #000;
     }
 }

@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Norse';
+  src: url(../../assets/fonts/Norse-KaWl.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url(../../assets/fonts/NorseBold-2Kge.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Rurikviking';
+  src: url(../../assets/fonts/Rurikviking-Regular.otf) format('opentype');
+}
+
 body {
   font-family: sans-serif;
   font-size: $size-text;

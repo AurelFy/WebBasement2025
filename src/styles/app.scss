@@ -1,11 +1,22 @@
 @import 'utils/variables';
 @import 'components/type';
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body, html {
     margin: 0;
     height: 300vh; /* Pour avoir un scroll visible */
     overflow-x: hidden;
   }
+
+p {
+    color: #fafafa;
+    font-family: 'PT Serif', serif;
+    font-size: 1.5rem;
+}
   
 .parallax-container {
     position: relative;
@@ -27,17 +38,17 @@ body, html {
   }
   
 .layer-back {
-    background-image: url('../assets/images/fond_projets_.png');
+    background-image: url('../assets/images/back.png');
     z-index: 1;
   }
   
 .layer-middle {
-    background-image: url('../assets/images/deuxième_planV2.png');
+    background-image: url('../assets/images/second_layer.png');
     z-index: 2;
   }
   
 .layer-front {
-    background-image: url('../assets/images/premier_plan.png');
+    background-image: url('../assets/images/first_layer.png');
     z-index: 4;
   }
 
@@ -48,7 +59,7 @@ body, html {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    top: 10%;
+    top: 20%;
     width: 100vw;
     text-align: center;
     z-index: 3;
@@ -56,4 +67,41 @@ body, html {
     transform: translate(-50%, 0);
     position: fixed;
   }
+
+.chapter--first__text01 {
+    height: 100vh;
+    background-image: url(../assets/images/chapter_first_01.png);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    p {
+        width: 33.688rem;
+        margin: 0 17% 10% 0;
+        padding: 0.625rem;
+        border-radius: 0.313rem;
+        background-color: rgb(255, 255, 255, 0);
+        backdrop-filter: blur(0.625rem);
+    }
+}
+
+.chapter--first__text02 {
+    height: 100vh;
+    background-image: url(../assets/images/chapter_first_02.png);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    p {
+        width: 33.688rem;
+        margin: 0 8% 15% 0;
+        padding: 0.625rem;
+        border-radius: 0.313rem;
+        background-color: rgb(255, 255, 255, 0);
+        backdrop-filter: blur(0.625rem);
+    }
+    
+}
 

@@ -8,9 +8,9 @@ window.addEventListener('scroll', function() {
     document.querySelector('.layer-front').style.transform = `translateY(${scrollTop * 0.2}px)`;
   });
 
-  const title = document.querySelector('.title--big');
+const title = document.querySelector('.title--big');
 
-  window.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
     const limit = window.innerHeight * 0.7;
   
